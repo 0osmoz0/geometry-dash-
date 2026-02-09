@@ -3,7 +3,7 @@
  */
 
 const Game = (function () {
-  const SCROLL_SPEED = 280;
+  const SCROLL_SPEED = 220;
   const PLAYER_SCREEN_X = 0.2;
 
   let cameraX = 0;

@@ -19,7 +19,7 @@ const Collision = (function () {
       const oY = o.y !== undefined ? o.y : Level.GROUND_TOP - oH;
       var rect;
       if (o.type === 'spike') {
-        var spikeHitHeight = Math.max(35, oH * 0.4); // seule la pointe tue
+        var spikeHitHeight = Math.min(25, oH * 0.25);
         rect = {
           x: screenX + 5,
           y: oY,
