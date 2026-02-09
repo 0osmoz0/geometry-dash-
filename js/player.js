@@ -48,11 +48,12 @@ const Player = (function () {
 
   function getHitbox() {
     const screenX = Renderer.getWidth() * 0.2;
+    const margin = 8;
     return {
-      x: screenX + 4,
-      y: y + 4,
-      width: SIZE - 8,
-      height: SIZE - 8
+      x: screenX + margin,
+      y: y + margin,
+      width: SIZE - margin * 2,
+      height: SIZE - margin * 2
     };
   }
 
