@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #0a0a0f;
+}
+
+#game-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#game-canvas {
+  display: block;
+  background: #0a0a0f;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+/* Garder le ratio 16:9, scale pour remplir l'écran */
+@media (min-aspect-ratio: 16/9) {
+  #game-canvas {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  #game-canvas {
+    width: auto;
+    height: 100%;
+  }
+}
